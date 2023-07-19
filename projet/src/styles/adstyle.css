@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --green:#27ae60;
+   --black:#333;
+   --white:#fff;
+   --bg-color:#eee;
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --border:.1rem solid var(--black);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+.btn{
+   display: block;
+   width: 100%;
+   cursor: pointer;
+   border-radius: .5rem;
+   margin-top: 1rem;
+   font-size: 1.7rem;
+   padding:1rem 3rem;
+   background: var(--green);
+   color:var(--white);
+   text-align: center;
+}
+
+.btn:hover{
+   background: var(--black);
+}
+
+.message{
+   display: block;
+   background: var(--bg-color);
+   padding:1.5rem 1rem;
+   font-size: 2rem;
+   color:var(--black);
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+.container{
+   max-width: 1200px;
+   padding:2rem;
+   margin:0 auto;
+}
+
+.admin-product-form-container.centered{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   
+}
+
+.admin-product-form-container form{
+   max-width: 50rem;
+   margin:0 auto;
+   padding:2rem;
+   border-radius: .5rem;
+   background: var(--bg-color);
+}
+
+.admin-product-form-container form h3{
+   text-transform: uppercase;
+   color:var(--black);
+   margin-bottom: 1rem;
+   text-align: center;
+   font-size: 2.5rem;
+}
+
+.admin-product-form-container form .box{
+   width: 100%;
+   border-radius: .5rem;
+   padding:1.2rem 1.5rem;
+   font-size: 1.7rem;
+   margin:1rem 0;
+   background: var(--white);
+   text-transform: none;
+}
+
+.product-display{
+   margin:2rem 0;
+}
+
+.product-display .product-display-table{
+   width: 100%;
+   text-align: center;
+}
+
+.product-display .product-display-table thead{
+   background: var(--bg-color);
+}
+
+.product-display .product-display-table th{
+   padding:1rem;
+   font-size: 2rem;
+}
+
+
+.product-display .product-display-table td{
+   padding:1rem;
+   font-size: 2rem;
+   border-bottom: var(--border);
+}
+
+.product-display .product-display-table .btn:first-child{
+   margin-top: 0;
+}
+
+.product-display .product-display-table .btn:last-child{
+   background: crimson;
+}
+
+.product-display .product-display-table .btn:last-child:hover{
+   background: var(--black);
+}
+
+.account{
+    padding: 20px;
+    
+}
+
+
+
+
+/*-------------------------------------------------Navigation Barr--------------------------------------------*/
+
+.navigation{
+   position: fixed;
+   width: 300px;
+   height: 100%;
+   background: #287bff;
+   border-left: 10px solid #287bff ;
+   transition: 0.5s;
+   overflow: hidden;
+}
+.navigation ul{
+   margin-top: 80px;;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+
+.navigation ul li{
+   position: relative;
+   width: 200%;
+   list-style: none;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+   
+   
+}
+
+.navigation ul li:hover{
+
+  background-color: white; 
+}
+.navigation ul li a{
+
+   position: relative;
+   display: block;
+   width: 100%;
+   display: flex;
+   text-decoration: none;
+   color: #fff;
+  
+}
+
+.navigation ul li:hover a
+{
+   color: #287bff;
+}
+.navigation ul li a .icon{
+
+position: relative;
+display: block;
+min-width: 60px;
+height: 60px;
+line-height: 70px;
+text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+   font-size: 1.75em;
+}
+
+.navigation ul li a .title{
+   position: relative;
+   display: block;
+   padding: 0 10px;
+   height: 60px;
+   line-height: 60px;
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+

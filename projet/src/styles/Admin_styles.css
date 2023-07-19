@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic,  sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+
+
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #287bff;
+    border-left: 10px solid #287bff ;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation ul{
+    margin-top: 80px;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 200%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+    
+}
+
+.navigation ul li:hover{
+
+   background-color: white; 
+}
+.navigation ul li a{
+
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+.navigation ul li:hover a
+{
+    color: #287bff;
+}
+.navigation ul li a .icon{
+
+position: relative;
+display: block;
+min-width: 60px;
+height: 60px;
+line-height: 70px;
+text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+    font-size: 1.75em;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+
+}
+.main{
+    position: absolute;
+    left: 300px;
+    min-height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+}
+.topbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.toogle{
+    position: relative;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    align-items: center;
+}
+.user{
+   position: relative;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+
+}
+.user img{
+position: absolute;
+top:0;
+left: 60px;
+width: 100%;
+height: 100%;
+object-fit:cover ;
+
+}
+
+
+
+.search{
+    position: relative;
+    width: 400px;
+    margin: 0 30px;
+}
+.search label{
+    position: relative;
+    width: 100%;
+}
+.search label input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding:5px 20px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.cardbox{
+
+position: relative;
+width: 100%;
+padding: 40px;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+grid-gap: 140px;
+}
+.cardbox .card{
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+   
+}
+.cardbox .card .numbers{
+
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: #287bff;
+
+}
+
+.cardbox .card .cardname{
+    color: black;
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+.cardbox .card .iconBX{
+    padding-left: 40px;
+    font-size: 3.5em;
+    color: black;
+} 
+
+.cardbox .card:hover{
+    background: #287bff;
+}
+.cardbox .card:hover .numbers,
+.cardbox .card:hover .cardname,
+.cardbox .card:hover .iconBX
+{
+    color : #fff;
+
+}
+
+/*-----------------Recent payments-------------------*/
+
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap:30px;
+    margin-top: 10px;
+}
+
+.details .recentOrders{
+    position: relative;
+   display: grid;
+   min-height: 500px;
+   background: #fff;
+   padding: 20px;
+   box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+   border-radius: 20px;
+}
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cardHeader h2{
+font-weight: 600;
+color: #287bff;
+}
+.btn{
+    position: relative;
+    padding: 5px 10px;
+    background: #287bff;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.details table{
+width: 100%;
+margin-top: 10px;
+}
+
+.details table thead td{  
+    font-weight: 600;
+}
+.details .recentOrders table td {
+
+    color: #000000;
+    border-bottom: 1px  solid rgba(0,0,0,0.1);
+}
+.details .recentOrders table tbody tr:hover{
+    background: #287bff;
+    color: #fff;
+}
+.details .recentOrders table tr td{
+    padding: 10px;
+}
+
+.status.delivered{
+    padding: 2px 4px;
+    background: #8de02c;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.status.return{
+    padding: 2px 4px;
+    background: #f00;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.status.inprogress{
+    padding: 2px 4px;
+    background: #1795ce;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.status.pending{
+    padding: 2px 4px;
+    background: #dbce15;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+
+
+/*-----------------Recent customers--------->*/
+.recentCustomers{
+    position: relative;
+    display: grid;
+    min-height: 500px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+    border-radius: 20px;
+}
+
+.recentCustomers .imgBX{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.recentCustomers .imgBX img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.recentCustomers table tr td{
+    padding: 12px 10px;
+}
+.recentCustomers table tr:hover{
+    background: #287bff; 
+    
+}
+.recentCustomers table tr td h4{
+    font-size: 16px;
+    font-weight: 2px;
+    list-style: 1.2em;
+}
+.recentCustomers table tr td h4 span{
+    font-size: 14px;
+
+    color: #aaa6a6;
+
+}
+.recentCustomers table tr:hover{
+    background: #287bff;
+    color: white;
+}
+.recentCustomers table tr:hover td h4 span{
+    color: white;
+}
+

@@ -1,0 +1,114 @@
+.post1{/*----------------------------------------ok*/
+    display: flex;
+    margin-left:0;
+    margin-right:0;
+    border:0;
+    padding:0;
+    width: 100%;
+    
+    
+  
+  
+  }
+  
+  .post2{/*----------------------------------------ok*/
+    display: flex;
+    margin-left:0;
+    margin-right:0;
+    border:0;
+    padding-top :5px;
+    width: 100%;
+    
+    
+  
+  
+  }
+  .post3{/*----------------------------------------ok*/
+    display: flex;
+    margin-left:0;
+    margin-right:0;
+    border:0;
+    padding-top :5px;
+    width: 100%;
+    
+    
+  
+  
+  }
+  .post4{/*----------------------------------------ok*/
+    display: flex;
+    margin-left:0;
+    margin-right:0;
+    border:0;
+    padding-top :5px;
+    width: 100%;
+    
+    
+  
+  
+  }
+
+}
+.post5{/*----------------------------------------ok*/
+  display: flex;
+  margin-left:0;
+  margin-right:0;
+  border:0;
+  padding-top :5px;
+  width: 100%;
+  
+  
+
+
+}
+  .section-header{
+      
+      font-family: 'San Francisco', Helvetica, Arial, san-serif;
+      font-weight: normal;
+      color: #333;
+      text-align: center;
+      font-size: 2.0em;
+      padding-bottom:40px;
+      padding-top:50px;
+      
+  }
+
+  .back-video{
+
+    position:absolute;
+
+    right: 5;
+
+    bottom: 0;
+
+    z-index: -1;
+
+    filter: brightness(100%);
+
+
+
+}
+
+@media(min-aspect-ratio:16/9){
+
+    .back-video{
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+}
+
+@media(max-aspect-ratio:16/9){
+
+    .back-video{
+
+        width: auto;
+
+        height: auto;
+
+    }
+
+}

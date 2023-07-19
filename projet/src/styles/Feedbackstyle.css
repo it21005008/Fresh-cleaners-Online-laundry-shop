@@ -1,0 +1,49 @@
+body
+{
+
+    background-size: cover;
+}
+.wrap
+{
+    width: 800px;
+    height: 700px;
+    margin: 30px auto;
+}
+
+h1
+{
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+table{font-size: 30px;}
+
+td
+{
+    padding: 10px 20px 0px 0px;
+}
+
+.text
+{
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+}
+.textarea
+{
+    width: 830px;
+    height: 150px;
+    border-radius: 8px;
+}
+.button
+{
+    width: 830px;
+    height: 50px;
+    background-color: darkblue;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+
+}

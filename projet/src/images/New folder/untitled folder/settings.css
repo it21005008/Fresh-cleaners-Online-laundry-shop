@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic,  sans-serif;
+    outline: none; border:none;
+}
+
+body{
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+}
+
+/*-------------------------------------------------Navigation Barr--------------------------------------------*/
+
+.navigation{
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: #287bff;
+    border-left: 10px solid #287bff ;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation ul{
+    margin-top: 80px;;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation ul li{
+    position: relative;
+    width: 200%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+    
+}
+
+.navigation ul li:hover{
+
+   background-color: white; 
+}
+.navigation ul li a{
+
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+   
+}
+
+.navigation ul li:hover a
+{
+    color: #287bff;
+}
+.navigation ul li a .icon{
+
+position: relative;
+display: block;
+min-width: 60px;
+height: 60px;
+line-height: 70px;
+text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+    font-size: 1.75em;
+}
+
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.container2{
+    position: absolute;
+    left: 300px;
+    min-height: 100vh;
+    background: #fff;
+    transition: 0.5s;
+    max-width: 1200px;
+    padding:32px ;
+    margin: 0 auto;
+   
+}
+
+.admin-product-form-container form{
+    max-width:500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 4px;
+    background: rgb(214, 213, 213);
+  
+
+}
+.admin-product-form-container form h3{
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 30px;
+ 
+}
+.admin-product-form-container form .box{
+width: 100%;
+margin-top: 8px;
+border-radius: 4px;
+padding:15px 20px ;
+font-size: 16px;
+background: #fff;
+text-transform: none;
+
+}
+.btn:hover{
+    background-color: #242323;
+}
+.btn{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #3cb371;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.message{
+
+    display: block;
+    background: rgb(255, 255, 255);
+   
+    font-size: 2rem;
+    color:rgb(128, 9, 9);
+   
+ }
+
+
+/*-----------------------------table details----*/
+
+.product-display{
+    margin: 10px 0;
+}
+
+.product-display .product-display-table{
+    width: 100%;
+    text-align: center;
+}
+.product-display .product-display-table thead{
+
+background-color: #ccc8c8;
+}
+
+.product-display .product-display-table th{
+
+padding: 12px;
+font-size: 16px;
+
+
+}
+
+.product-display .product-display-table td{
+
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: #636161;
+}
+
+.product-display .product-display-table .btn:first-child{
+    margin-top: 0;
+ }
+ 
+ .product-display .product-display-table .btn:last-child{
+    background: crimson;
+ }
+ 
+ .product-display .product-display-table .btn:last-child:hover{
+    background: var(--black);
+ }
+ 
